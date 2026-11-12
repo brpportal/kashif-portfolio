@@ -23,3 +23,6 @@ document.querySelectorAll(".wa").forEach(function (a) { a.href = WA; a.target = 
   addEventListener("scroll", function () { if (!t) { t = true; requestAnimationFrame(f); } }, { passive: true });
   f();
 })();
+
+/* PKT local time (footer) */
+(function(){var el=document.getElementById('pkt');if(!el)return;function tick(){try{el.textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Karachi',hour:'2-digit',minute:'2-digit'});}catch(e){el.textContent='';}}tick();setInterval(tick,30000);})();

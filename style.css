@@ -134,3 +134,21 @@ mark{background:var(--yel);padding:0 .15em;border-radius:.2em;box-shadow:0 .12em
 .reveal{opacity:0;transform:translateY(34px) scale(.97);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--d,0)*.1s)}
 .reveal.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.hero-in{opacity:1;transform:none;animation:none;transition:none}.blob{animation:none}.doodle{stroke-dashoffset:0;transition:none}}
+
+/* v4 upgrade — analysis-driven */
+.meet{display:flex;gap:14px;align-items:center;justify-content:center;margin:24px auto 0;text-align:left;max-width:560px}
+.avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--sky);flex:none}
+.meet p{font-weight:700;font-size:15.5px;line-height:1.5}
+.meet b{color:var(--red)}
+.quick-sec{padding:26px 0 0}
+.quick{background:#fff;border:2.5px solid var(--ink);border-radius:18px;box-shadow:8px 8px 0 var(--sky);padding:20px 22px;text-align:left}
+.quick .mono{color:var(--red);display:block;margin-bottom:8px}
+.quick p{font-size:17px;font-weight:600;line-height:1.55}
+.flow{margin-bottom:14px}
+.honest{margin-top:18px;font-weight:700;background:#E3F3FF;border:2px dashed var(--ink);border-radius:12px;padding:14px 16px;text-align:left}
+.faq details{background:#fff;border:2.5px solid var(--ink);border-radius:14px;padding:16px 18px;margin-bottom:12px;box-shadow:5px 5px 0 rgba(10,37,64,.15);text-align:left}
+.faq summary{font:800 17px var(--slab);cursor:pointer}
+.faq details p{margin-top:8px;font-weight:600;color:#47617A;line-height:1.55}
+.about-av{width:84px;height:84px;vertical-align:middle}
+.pill{display:inline-block;background:var(--sky);border:2px solid var(--ink);border-radius:999px;padding:5px 14px;font:700 13px var(--mono);vertical-align:middle;margin-left:8px}
+.foot-sub{opacity:.75;font-size:13.5px;margin-top:4px}
