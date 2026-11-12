@@ -14,7 +14,7 @@
 --mono:"Space Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 --ease:cubic-bezier(.22,.9,.3,1)}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{font-family:"Inter",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55;color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;
 background:radial-gradient(rgba(10,37,64,.13) 1.2px,transparent 1.4px) 0 0/22px 22px,linear-gradient(180deg,#CDE9FF,var(--cream) 45%,#EAF4FF);background-attachment:fixed,fixed}
 .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
@@ -178,3 +178,15 @@ mark{background:var(--yel);padding:0 .15em;border-radius:.2em;box-shadow:0 .12em
 .guidelink{color:var(--red);font-weight:800;text-decoration:underline}
 .alt2{background:linear-gradient(180deg,#EAF4FF,#fff)}
 @media (max-width:640px){.ba{grid-template-columns:1fr}.proofbar p{border-radius:16px}}
+
+/* v6 — slim portfolio + mobile fixes */
+.hero{padding-top:76px}
+.meet{flex-wrap:wrap}
+.stack{font:700 12.5px var(--mono);color:#47617A;margin:8px 0 14px;letter-spacing:.03em}
+.sec .card .btn{margin-top:4px}
+@media (max-width:640px){
+  .mark{font-size:15.5vw}
+  .burst{width:104px;height:104px;font-size:11px}
+  .meet{justify-content:flex-start;text-align:left}
+  .ctas .btn{width:100%;justify-content:center}
+}
