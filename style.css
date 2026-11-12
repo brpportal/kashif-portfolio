@@ -155,3 +155,26 @@ mark{background:var(--yel);padding:0 .15em;border-radius:.2em;box-shadow:0 .12em
 
 .av-txt{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;font:400 24px var(--disp);letter-spacing:.02em}
 .about-av.av-txt{font-size:32px}
+
+/* v5 — premium upgrade */
+.proofbar{padding:14px 0 0}.proofbar p{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:10px 18px;font-weight:700;font-size:14.5px;text-align:center;box-shadow:4px 4px 0 var(--sky)}
+.proofbar .i{width:15px;height:15px;vertical-align:-2px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:6px 0 16px;text-align:left}
+.phone{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:16px;box-shadow:6px 6px 0 var(--sky)}
+.phone .mono{color:var(--red);display:block;margin-bottom:12px}
+.phone.good{box-shadow:6px 6px 0 #8ED0FF}
+.dm p{max-width:85%;padding:8px 12px;border-radius:14px;font-weight:600;font-size:14px;margin-bottom:8px;background:#EAF4FF;border:2px solid var(--ink)}
+.dm .b2x{margin-left:auto;background:#DFF2FF}
+.dm .seen{background:#fff;border-style:dashed;opacity:.7}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.pgrid i{height:52px;border-radius:10px;border:2px solid var(--ink);background:linear-gradient(135deg,#CDE9FF,#8ED0FF)}
+.pgrid i:nth-child(2){background:linear-gradient(135deg,#FFE3EE,#F9A8D4)}
+.pgrid i:nth-child(3){background:linear-gradient(135deg,#E3F3FF,#A5DCFF)}
+.pgrid i:nth-child(4){background:linear-gradient(135deg,#FFF3D6,#FFD98A)}
+.cap{font-weight:700;font-size:14.5px;color:#47617A}
+.ok-line{color:var(--ink)} .ok-line .i{width:16px;height:16px;vertical-align:-2px}
+.tag{display:inline-block;background:var(--ink);color:#fff;font:700 11px var(--mono);border-radius:999px;padding:3px 10px;margin-bottom:10px;letter-spacing:.06em}
+.match{font:700 13px var(--mono);color:var(--red);margin:10px 0 12px}
+.guidelink{color:var(--red);font-weight:800;text-decoration:underline}
+.alt2{background:linear-gradient(180deg,#EAF4FF,#fff)}
+@media (max-width:640px){.ba{grid-template-columns:1fr}.proofbar p{border-radius:16px}}
