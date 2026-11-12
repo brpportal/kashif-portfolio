@@ -234,3 +234,16 @@ img,video,svg{max-width:100%}
   .burst{width:92px;height:92px}
   .foot{padding-bottom:110px}
 }
+
+/* v9 — dedicated mascot section */
+.meet-band{background:#fff;border-bottom:2.5px solid var(--ink)}
+.meet-in{display:flex;gap:28px;align-items:center;padding:46px 0}
+.meet-av{width:150px;height:150px;border-width:3px;box-shadow:6px 6px 0 var(--sky)}
+.kick2{font:700 12.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.meet-h{font:800 clamp(26px,4.4vw,38px)/1.15 var(--slab);margin:6px 0 8px}
+.meet-txt p:last-child{font-weight:600;color:#33475B;max-width:520px}
+@media (max-width:640px){.meet-in{flex-direction:column;text-align:center;padding:36px 0}.meet-av{width:128px;height:128px}.meet-txt p:last-child{margin-inline:auto}}
+
+/* v9.1 — avatar display safety + tighter mobile header */
+.av-anim{display:inline-block;vertical-align:middle}
+@media (max-width:480px){.hd nav{gap:13px}.hd nav a{font-size:12.5px}.logo{font-size:19px}.hd .btn{padding:8px 11px;font-size:12.5px}}
