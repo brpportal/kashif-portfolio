@@ -15,6 +15,7 @@ document.querySelectorAll(".wa").forEach(function (a) { a.target = "_blank"; a.r
 // Progress bar + frosted header
 (function () {
   var bar = document.getElementById("progress"), head = document.getElementById("bar"), t = false;
+  if (!bar || !head) { return; }
   function f() {
     var y = window.scrollY, m = document.documentElement.scrollHeight - innerHeight;
     bar.style.transform = "scaleX(" + (m > 0 ? Math.min(y / m, 1) : 0) + ")";
