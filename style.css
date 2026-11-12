@@ -1,12 +1,21 @@
+/* Self-hosted fonts (Google Fonts, OFL) — site ke apne domain se load hote hain */
+@font-face{font-family:"Archivo Black";src:url("fonts/archivo-black.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto Slab";src:url("fonts/roboto-slab-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Roboto Slab";src:url("fonts/roboto-slab-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Mono";src:url("fonts/space-mono-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Space Mono";src:url("fonts/space-mono-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("fonts/inter-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("fonts/inter-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url("fonts/inter-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
 /* Koclify — Creative Portfolio poster system */
 :root{--ink:#14110f;--red:#ff3d1f;--yel:#ffd21f;--teal:#2ec4b6;--sky:#7ec8f7;--cream:#fff6e5;
---disp:"Arial Black","Helvetica Neue",Impact,Arial,sans-serif;
---slab:Rockwell,"Roboto Slab","Rockwell Extra Bold",Georgia,serif;
---mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+--disp:"Archivo Black","Arial Black","Helvetica Neue",Impact,Arial,sans-serif;
+--slab:"Roboto Slab",Rockwell,Georgia,serif;
+--mono:"Space Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 --ease:cubic-bezier(.22,.9,.3,1)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font-family:Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55;color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+body{font-family:"Inter",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55;color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;
 background:radial-gradient(rgba(20,17,15,.13) 1.2px,transparent 1.4px) 0 0/22px 22px,linear-gradient(180deg,#e4f3ff,var(--cream) 45%,#fff3dc);background-attachment:fixed,fixed}
 .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
 .i{width:1.3em;height:1.3em;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
