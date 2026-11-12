@@ -28,8 +28,8 @@ background:radial-gradient(rgba(10,37,64,.13) 1.2px,transparent 1.4px) 0 0/22px 
 .bar.on{background:rgba(234,244,255,.75);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);box-shadow:0 1px 0 rgba(10,37,64,.12)}
 .bar-in{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:12px;padding-bottom:12px}
 .logo{font-family:var(--disp);font-size:23px;letter-spacing:-1px;color:var(--ink);text-decoration:none}.logo i{color:var(--red);font-style:normal}
-.bar nav{display:none;gap:26px}.bar nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}.bar nav a:hover{color:var(--red)}
-@media(min-width:820px){.bar nav{display:flex}}
+.bar nav{display:flex;gap:16px}.bar nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}.bar nav a:hover{color:var(--red)}
+@media(min-width:820px){.bar nav{gap:26px}}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;font-size:16px;padding:14px 26px;border:2.5px solid var(--ink);border-radius:999px;color:var(--ink);box-shadow:0 5px 0 var(--ink);transition:transform .2s var(--ease),box-shadow .2s}
@@ -190,3 +190,5 @@ mark{background:var(--yel);padding:0 .15em;border-radius:.2em;box-shadow:0 .12em
   .meet{justify-content:flex-start;text-align:left}
   .ctas .btn{width:100%;justify-content:center}
 }
+
+@media (max-width:480px){.bar nav a{font-size:13.5px}.bar .btn.sm{padding:7px 12px;font-size:13px}.logo{font-size:20px}}
