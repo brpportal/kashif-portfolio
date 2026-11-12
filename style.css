@@ -192,3 +192,25 @@ mark{background:var(--yel);padding:0 .15em;border-radius:.2em;box-shadow:0 .12em
 }
 
 @media (max-width:480px){.bar nav a{font-size:13.5px}.bar .btn.sm{padding:7px 12px;font-size:13px}.logo{font-size:20px}}
+
+/* v7 — English + premium hero + cartoon founder */
+.pill-badge{display:inline-block;background:linear-gradient(135deg,#0B84FF,#38BDF8);color:#fff;font:700 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:10px 22px;border:2.5px solid var(--ink);border-radius:999px;box-shadow:0 5px 0 var(--ink)}
+.mark b{background:linear-gradient(180deg,#0A2540 20%,#0B84FF 60%,#38BDF8);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(3px 3px 0 rgba(126,200,247,.55))}
+.founder-card{display:flex;gap:16px;align-items:center;text-align:left;background:#fff;border:2.5px solid var(--ink);border-radius:20px;box-shadow:7px 7px 0 var(--sky);padding:18px 20px;max-width:600px;margin:34px auto 0}
+.founder-card p{font-weight:600;font-size:15.5px;line-height:1.55}
+.founder-card b{color:var(--red)}
+.av-face{background:#EAF4FF;overflow:hidden;flex:none}
+.av-face .cto{width:100%;height:100%;display:block;animation:bob2 3.2s ease-in-out infinite}
+.cto .eyes{transform-box:fill-box;transform-origin:center;animation:blink 4.4s infinite}
+.cto .spark{transform-box:fill-box;transform-origin:center;animation:sparkle 2.2s ease-in-out infinite}
+@keyframes bob2{50%{transform:translateY(-3px) rotate(-1.5deg)}}
+@keyframes blink{0%,91%,100%{transform:scaleY(1)}94.5%{transform:scaleY(.08)}}
+@keyframes sparkle{50%{transform:scale(1.35) rotate(20deg)}}
+.visit{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font:800 16px var(--slab);color:var(--red);text-decoration:none}
+.visit .arrw{transition:transform .25s var(--ease)}
+.visit:hover .arrw{transform:translateX(5px)}
+.yours{margin-top:14px;font:700 13.5px var(--mono);color:#47617A}
+.b1{background:radial-gradient(circle at 32% 30%,#DFF4FF,#8ED0FF 55%,#38BDF8)}
+.b2{background:radial-gradient(circle at 32% 30%,#E2FBF6,#5EEAD4 55%,#2EC4B6)}
+.b3{background:radial-gradient(circle at 32% 30%,#EAF6FF,#7EC8F7 55%,#0B84FF)}
+.blob{box-shadow:inset -14px -18px 30px rgba(10,37,64,.18),inset 10px 12px 22px rgba(255,255,255,.75),0 24px 48px rgba(11,132,255,.28)}
