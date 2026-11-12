@@ -1,6 +1,6 @@
-// WhatsApp: number aur message yahan se change hota hai
-const WA = "https://wa.me/923288862114?text=" + encodeURIComponent("Assalam o Alaikum! Mujhe apne business ke liye website banwani hai.");
-document.querySelectorAll(".wa").forEach(function (a) { a.href = WA; a.target = "_blank"; a.rel = "noopener"; });
+// WhatsApp: har button ka apna pre-filled message HTML me hai (package/demo ke naam ke sath).
+// Yahan sirf naye tab me kholna set hota hai — hrefs ko override NAHI karna.
+document.querySelectorAll(".wa").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
 
 // Scroll reveal
 (function () {
@@ -25,4 +25,4 @@ document.querySelectorAll(".wa").forEach(function (a) { a.href = WA; a.target = 
 })();
 
 /* PKT local time (footer) */
-(function(){var el=document.getElementById('pkt');if(!el)return;function tick(){try{el.textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Karachi',hour:'2-digit',minute:'2-digit'});}catch(e){el.textContent='';}}tick();setInterval(tick,30000);})();
+(function(){var el=document.getElementById('pkt');if(!el)return;function tick(){try{el.textContent=new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Karachi',hour:'2-digit',minute:'2-digit'});}catch(e){el.textContent='';}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){tick();setInterval(tick,30000);});}else{tick();setInterval(tick,30000);}})();
