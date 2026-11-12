@@ -11,26 +11,40 @@ const WHATSAPP_MESSAGE = "Assalam o Alaikum! Main Kashif Noor ki website se aya 
 // Saare .wa-link walay buttons par WhatsApp ka link lagao
 (function setWhatsAppLinks() {
   var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_MESSAGE);
-  var links = document.querySelectorAll(".wa-link");
-  for (var i = 0; i < links.length; i++) {
-    links[i].setAttribute("href", url);
-  }
+  document.querySelectorAll(".wa-link").forEach(function (a) { a.setAttribute("href", url); });
 })();
 
 // Scroll par sections ko naram si animation ke sath zahir karo
 (function scrollReveal() {
   var items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
-    for (var i = 0; i < items.length; i++) items[i].classList.add("visible");
+    items.forEach(function (el) { el.classList.add("visible"); });
     return;
   }
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12 });
-  items.forEach(function (el) { observer.observe(el); });
+  }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
+// Scroll progress bar, frosted header, aur badal (cloud) parallax
+(function scrollFx() {
+  var bar = document.getElementById("progress");
+  var header = document.getElementById("siteHeader");
+  var clouds = document.querySelectorAll(".cloud");
+  var ticking = false;
+  function update() {
+    var y = window.scrollY || 0;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = "scaleX(" + (max > 0 ? Math.min(y / max, 1) : 0) + ")";
+    header.classList.toggle("scrolled", y > 12);
+    if (y < 900) clouds.forEach(function (c, i) { c.style.marginTop = (y * (0.08 + i * 0.05)) + "px"; });
+    ticking = false;
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
 })();
